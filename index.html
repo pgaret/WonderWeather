@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WonderWeather</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+  </head>
+  <body>
+    <div class='container-fluid'>
+      <p class="cited">Inspired by and created with <a href="https://www.wunderground.com/?apiref=154099364fb6a87c">Wunderground's </a><a href="https://www.wunderground.com/weather/api/">API</a>
+      <div class="txtMain">
+        <h1>WonderWeather</h1>
+        <div class="row">
+          <div class="three columns" id="autoDrop">&nbsp;</div>
+          <div class="nine columns" id="searching">
+            <input id="inputW" type="search" oninput="citySearch()" placeholder="City or Zip"></input>
+            <button class="button-primary" onclick="getWeather()"> Retrieve Weather</button>
+          </div>
+          <div class="six columns" id="results">
+            <div id="imgIcon"><br></div>
+            <div id="geo"></div>
+            <br>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
