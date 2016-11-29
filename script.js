@@ -32,7 +32,7 @@ function citySearch() {
 
 function getWeather() {
   $.ajax({
-    url: "http://api.wunderground.com/api/31effe126c93bdf6/geolookup/conditions/q/" + $("#inputW").val() + ".json",
+    url: "https://api.wunderground.com/api/31effe126c93bdf6/geolookup/conditions/q/" + $("#inputW").val() + ".json",
     dataType: "jsonp",
     success: function(parsed_json) {
       var location = parsed_json['location']['city'];
