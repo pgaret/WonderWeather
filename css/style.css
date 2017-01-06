@@ -5,7 +5,11 @@
 
 h1{
   font-family: 'Title Font';
-  text-align: center;
+  /*text-align: center;*/
+}
+
+#results{
+  float: right;
 }
 
 input{
@@ -16,4 +20,8 @@ input{
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   margin-bottom: 30vh;
+}
+
+#searching {
+  /*text-align: center;*/
 }

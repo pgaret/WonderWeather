@@ -5,7 +5,7 @@
     <title>WonderWeather</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
   </head>
@@ -13,10 +13,10 @@
     <div class='container-fluid'>
       <p class="cited">Inspired by and created with <a href="https://www.wunderground.com/?apiref=154099364fb6a87c">Wunderground's </a><a href="https://www.wunderground.com/weather/api/">API</a>
       <div class="txtMain">
-        <h1>WonderWeather</h1>
         <div class="row">
-          <div class="three columns" id="autoDrop">&nbsp;</div>
-          <div class="nine columns" id="searching">
+          <div class="three columns offset-by-one columns" id="autoDrop">&nbsp;</div>
+          <div class="seven columns" id="searching">
+            <h1>WonderWeather</h1>
             <input id="inputW" type="search" oninput="citySearch()" placeholder="City or Zip"></input>
             <button class="button-primary" onclick="getWeather()"> Retrieve Weather</button>
           </div>
